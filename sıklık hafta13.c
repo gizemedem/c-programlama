@@ -1,17 +1,17 @@
 #include<stdio.h>
-int frequency(int sayi,int array[]){
-	int sayac=0,i;
+int frequency(int number,int array[]){
+	int counter=0,i;
 	for(i=0;i<10;i++){
-		if(array[i]==sayi){
-			sayac++;
+		if(array[i]==number){
+			counter++;
 		}
 	}
 	
-	return sayac;
+	return counter;
 	
 }
 int main(){
-	int sayi;
+	int number;
 	int N[10];
 	int i;
 	printf("enter numbers:");
@@ -20,17 +20,10 @@ int main(){
 	}
 	
 	printf("enter a number");
-	scanf("%d",&sayi);
+	scanf("%d",&number);
 	
 	
-	printf("%d kadar kez tekrar etti",frequency(sayi,N));
-	
-	
-	
-	
-	
-	
-	
+	printf(" repeated %d number of times",frequency(number,N));
 	
 	
 	
